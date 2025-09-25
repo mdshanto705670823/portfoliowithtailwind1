@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/fede9e4808.js"
+      crossorigin="anonymous"
+    ></script>
     <title>portfolio with tailwind</title>
     <style>
       body {
@@ -34,6 +38,29 @@
         </div>
       </nav>
     </header>
-    <div class="banner"></div>
+    <section class="grid grid-cols-1 md:grid-cols-2 items-center min-h-screen">
+      <div class="hero-text">
+        <h1>Hello It's Me</h1>
+        <h1>Hasibul Hasan</h1>
+        <p>
+          And I'm
+          <span>A</span>
+        </p>
+        <p>
+          Vero praesentium libero rerum est repellendus. Mollitia et ipsam qui
+          at ut magnam enim.
+        </p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="hero-image relative">
+        <img src="assets/Polygon.png" alt="" />
+        <img class="absolute" src="assets/banner.png" alt="" />
+      </div>
+    </section>
   </body>
 </html>
