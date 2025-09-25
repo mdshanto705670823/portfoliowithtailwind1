@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>portfolio with tailwind</title>
+    <style>
+      body {
+        font-family: "Sen", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-600">
+    <header class="relative">
+      <nav class="navbar bg-gray-800 p-4">
+        <div
+          class="container nav text-white sticky top-0 flex flex-col md:flex-row justify-between items-center mx-auto w-11/12"
+        >
+          <span class="logo text-[35px]"> Hasibul </span>
+          <div class="nav-item hidden md:flex md:gap-12 text-[20px]">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="banner"></div>
+  </body>
+</html>
