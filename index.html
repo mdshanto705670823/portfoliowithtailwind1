@@ -21,11 +21,13 @@
       }
     </style>
   </head>
-  <body class="bg-gray-600">
+  <body class="bg-[#3c3e3f] text-white">
     <header class="relative">
-      <nav class="navbar bg-gray-800 p-4">
+      <nav
+        class="navbar fixed w-full backdrop-blur-lg z-100 top-0 bg-transparent p-4"
+      >
         <div
-          class="container nav text-white sticky top-0 flex flex-col md:flex-row justify-between items-center mx-auto w-11/12"
+          class="container nav text-white flex flex-col md:flex-row justify-between items-center mx-auto w-11/12"
         >
           <span class="logo text-[35px]"> Hasibul </span>
           <div class="nav-item hidden md:flex md:gap-12 text-[20px]">
@@ -38,29 +40,92 @@
         </div>
       </nav>
     </header>
-    <section class="grid grid-cols-1 md:grid-cols-2 items-center min-h-screen">
-      <div class="hero-text">
-        <h1>Hello It's Me</h1>
-        <h1>Hasibul Hasan</h1>
-        <p>
-          And I'm
-          <span>A</span>
-        </p>
-        <p>
-          Vero praesentium libero rerum est repellendus. Mollitia et ipsam qui
-          at ut magnam enim.
-        </p>
-        <div class="icons">
+
+    <section
+      class="container mx-auto grid grid-cols-1 pt-20 md:grid-cols-2 items-center justify-between min-h-screen"
+    >
+      <div
+        class="hero-text mt-6 flex flex-col items-center md:items-start justify-center gap-5 text-xl"
+      >
+        <div class="flex flex-col justify-center gap-4">
+          <div>
+            <h1 class="text-2xl">Hello It's Me</h1>
+            <h1 class="text-4xl font-bold">Hasibul Hasan</h1>
+          </div>
+          <p class="text-2xl text-start">
+            And I'm
+            <span class="text-blue-600/75">A</span>
+          </p>
+          <p>
+            Vero praesentium libero rerum est repellendus. Mollitia et ipsam qui
+            at ut magnam enim.
+          </p>
+        </div>
+        <div class="icons text-4xl text-blue-600/75">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-youtube"></i>
         </div>
+        <button
+          class="px-6 py-2 w-48 shadow-lg bg-blue-600 [box-shadow:6px_6px_30px_rgba(0,0,255,0.3)] rounded-md"
+        >
+          Download
+        </button>
       </div>
       <div class="hero-image relative">
         <img src="assets/Polygon.png" alt="" />
-        <img class="absolute" src="assets/banner.png" alt="" />
+        <img class="absolute top-6 z-10" src="assets/banner.png" alt="" />
       </div>
+    </section>
+    <section class="middle-banner bg-[#25282A]">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between"
+      >
+        <div class="relative">
+          <img class="absolute top-5" src="assets/banner.png" alt="" />
+          <img class="w-[500px]" src="assets/rouded.png" alt="" />
+        </div>
+        <div class="flex flex-col gap-6 items-center">
+          <div>
+            <h1 class="text-2xl font-bold">Aboute me</h1>
+            <h1 class="text-xl">UX/UI Designer</h1>
+          </div>
+          <h1 class="text-sm">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+            nobis quaerat consequatur eos ea laboriosam mollitia aut id facere
+            dicta. Numquam quaerat, velit eaque ipsum hic earum accusantium a,
+            ea fuga aliquid molestias explicabo ratione soluta ab? Iusto,
+            inventore odit.
+          </h1>
+          <button
+            class="px-6 py-2 w-48 shadow-lg bg-blue-600 [box-shadow:6px_6px_30px_rgba(0,0,255,0.3)] rounded-md"
+          >
+            See More...
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="skill-section">
+      <div class="container mx-auto flex flex-col justify-between items-center gap-6 pt-12">
+        <h1 class="text-2xl font-bold text-center">My <span class="text-blue-600/75">Skills</span></h1>
+        <div class="flex flex-col justify-center items-center bg-black gap-6 p-4 w-64 rounded-2xl">
+          <img class="w-8" src="assets/brush.png" alt="" />
+          <h1>UX/UI Designer</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            eligendi, nam dolorem optio repellendus
+          </p>
+          <button
+            class="px-6 py-2  shadow-lg bg-blue-600 [box-shadow:6px_6px_30px_rgba(0,0,255,0.3)] rounded-md"
+          >
+            See More...
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="bg-image">
+      <div class="bg-[url(/assets/Projects_bg.png)]"></div>
     </section>
   </body>
 </html>
